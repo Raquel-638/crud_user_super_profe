@@ -1,0 +1,38 @@
+.app {
+    position: relative;
+}
+
+.user__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0084ff;
+    text-align: center;
+    z-index: 1;
+
+    .user__title {
+        font-weight: 800;
+        color: #f0f8ff;
+        -webkit-text-stroke-color: #56595c;
+        -webkit-text-stroke-width: 0.5px;
+        }
+
+    .new__user__btn {
+        margin: 1em 1.2em;
+        width: 8em;
+        padding: 0.5em;
+        border-radius: 0.7em;
+        background-color: #999;
+        color: #f0f8ff;
+        transition: scale 0.3s ease;
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
+
+.user__container {
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 8em 1em;
+}

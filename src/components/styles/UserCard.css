@@ -1,0 +1,73 @@
+.user {
+    width: 100%;
+    max-width: 20em;
+    background-color: #000000d0;
+    color: #f0f8ff;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px 3px #fdfdfdb7;
+    padding: 1.5em 1em 2em;
+    transition: scale 0.3s ease;
+    &:hover {
+        scale: 0.95;
+    }
+
+    .user__img {
+        width: 80%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto 2em;
+    }
+
+    .user__name {
+        font-size: 1.5em;
+    }
+    
+    .user__hr {
+        margin: 0.5em 0;
+        border-color: #0084ff;
+    }
+
+    .user__list {
+        gap: 0.7em;
+        margin-bottom: 1.1em;
+
+        .user__item {
+            gap: 0.2em;
+
+            .user__label {
+                font-size: 1.2em;
+                padding-left: 1em;
+                color: #87cefa;
+            }
+
+            .user__value {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .user__footer {
+        gap: 1em;
+
+        .user__btn {
+            font-size: 1.5em;
+            width: 50%;
+            padding: 0.5em 0;
+            border-radius: 0.4em;
+            color: #f0f8ff;
+            transition: filter 0.5s ease;
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+
+        .user__delete {
+            background-color: #ff0000dc;
+        }
+
+        .user__edit {
+            background-color: #0000ffda;
+        }
+    }
+}
